@@ -1,0 +1,465 @@
+* {
+  padding: 0%;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+nav {
+  background: rgb(53, 51, 51);
+  height: 5vh;
+  width: 100%;
+  display: flex;
+}
+
+nav ul {
+  display: flex;
+  margin-right: 20px;
+  justify-content: flex-end;
+}
+
+nav ul li {
+  display: inline-block;
+  line-height: 50px;
+  margin: 0 25px;
+}
+
+nav ul li a {
+  color: white;
+  font-size: 20px;
+}
+
+a.active,a:hover{
+  transition: .5s;
+  text-decoration: underline;
+  text-decoration: bold;
+  background-color: #F9F0E0;
+  color: black;
+}
+
+.wrapper{
+  justify-content: flex-end;
+  width: 70vw;
+}
+
+.logo {
+  color: white;
+  font-size: 27px;
+  line-height: 50px;
+  /* padding: 0 60px; */
+  text-align: center;
+  font-weight: bold;
+  width: 26vw;
+}
+
+.checkbtn {
+  font-size: 20px;
+  color: white;
+  float: right;
+  line-height: 50px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+#check {
+  display: none;
+}
+
+@media (max-width:952px) {
+  label.logo{
+    font-size: 25px;
+    padding-left: 50px;
+  }
+  nav ul li a {
+    font-size: 17px;
+  }
+}
+
+@media (max-width:858px) {
+  .checkbtn {
+    display: block;
+  }
+  ul {
+    position: fixed;
+    width: 100%;
+    height: 27vh;
+    background: red;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+  nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 20px;
+  }
+  nav ul li a {
+    font-size: 20px;
+  }
+  a:hover,a.active{
+    background: white;
+    color: black;
+  }
+  #check:checked ~ ul {
+    left: 0;
+  }
+}
+
+
+
+
+.btn {
+  position: absolute;
+  top: 33%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #555;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.btn:hover {
+  background-color: black;
+}
+
+.btn2 {
+  position: absolute;
+  top: 64.5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #555;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.btn2:hover {
+  background-color: black;
+}
+
+.btn3 {
+  position: absolute;
+  top: 94.5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #555;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.btn3:hover {
+  background-color: black;
+}
+
+.container2 {
+  background: white;
+  min-height: 30vh;
+  width: 100vw;
+  display: flex;
+}
+
+.container3 {
+  background: white;
+  display: flex;
+}
+
+.destinatortext {
+  background-color: #DEF2F0;
+  padding-bottom: 5%;
+  padding-right: 5%;
+  padding-left: 3%;
+}
+
+.dtext {
+  background-color: #DEF2F0;
+  text-align: center;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+.dtext2 {
+  background-color: #DEF2F0;
+  text-align: center;
+  padding-left: 1%;
+  padding-right: 1%;
+}
+.dtext3 {
+  background-color: #DEF2F0;
+  text-align: center;
+  padding-left: 1%;
+  padding-right: 1%;
+}
+
+
+
+
+.mainphoto {
+  /* max-width: 80rem; */
+  /* margin: 10% auto 10%; */
+  width: 50vw;
+  background-size: cover;
+  background-image: url("../images/Profile_Pic.png");
+  /* background-size: 300px 100px; */
+}
+
+/* .mainphoto .floating-image {
+  max-width: 25%;
+  margin: 5%;
+}
+
+.mainphoto .floating-image.right {
+  float: right;
+} */
+
+.container {
+  background: #F9F0E0;
+  min-height: 30vh;
+  width: 100vw;
+  display: flex;
+  /* background-size: stretch; */
+}
+
+.maintext{
+  width:50vw;
+  padding: 5px; 
+}
+
+.preloader {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  z-index: 100000;
+  background-color: #F9F0E0;
+  top: 0;
+  display: flex;
+  align-items: center;
+}
+.preloader img {
+  animation: spin 3s ease;
+  transition: all;
+  width: 150px;
+  margin: 0 auto;
+}
+
+.active {
+  background-color: red;
+}
+
+.img-logo {
+  height: 5vh;
+  display: block;
+  float: left;
+  margin-top: auto;
+  padding-left: 25px;
+}
+  
+
+
+
+
+
+h1 {
+font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+font-weight: 300;
+}
+
+h2 {
+font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+font-weight: 700;
+}
+
+h3 {
+font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+font-weight: 700;
+font-size: 40px;
+text-align: center;
+}  
+
+h4 {
+font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+font-weight: 700;
+font-size: 27px;
+text-align: center;  
+}
+
+
+
+.casestudies {
+font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+font-size: 12px;
+font-weight: 100;
+color: white;
+float: right;
+margin-top: 0px;
+padding-right: 25px;
+}
+
+.about {
+font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+font-size: 12px;
+color: white;
+float: right;
+margin-top: 0px;
+padding-right: 25px;
+}
+
+.resume {
+font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+font-size: 12px;
+color: white;
+float: right;
+margin-top: 0px;
+padding-right: 25px;
+}
+
+.contact {
+font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+font-size: 12px;
+color: white;
+float: right;
+margin-top: 0px;
+padding-right: 25px;
+}
+
+.sitename {
+font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+font-size: 12px;
+font-weight: 900;
+color: white;
+float: left;
+margin-top:auto;
+padding-left: 2px;
+}
+
+
+
+
+.projects {
+position: relative;
+background-position: center;
+width: 100%;
+padding-top: 2%;
+}
+
+.tools {
+position: relative;
+background-position: center;
+width: 100%;
+padding-top: 5%;
+}
+
+.designprocess {
+position: relative;
+background-position: center;
+width: 100%;
+padding-top: 5%;
+}
+
+.openingstatement {
+background-size: unset;
+background-position: center;
+background-color: rgb(218, 209, 198);
+} 
+
+.img-desinator {
+width: fit-content;
+display: block;
+margin-left: auto;
+margin-right: auto;
+margin-top: 2%;
+}
+
+.img-hfh {
+width: fit-content;
+display: block;
+margin-left: auto;
+margin-right: auto;
+}
+.img-pal {
+width: fit-content;
+display: block;
+margin-left: auto;
+margin-right: auto;
+}
+.img-csoon {
+width: fit-content;
+display: block;
+margin-left: auto;
+margin-right: auto;
+}
+
+.img-tools {
+width: fit-content;
+display: block;
+margin-left: auto;
+margin-right: auto;
+}
+
+.img-designprocess {
+width: fit-content;
+display: block;
+margin-left: auto;
+margin-right: auto;
+}
+
+
+.footer {
+display: block;
+line-height: auto;
+background-position: center;
+margin: auto;
+color: white;
+background-color: rgb(91, 86, 86);
+}
+
+p {
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+font-size: 25px;
+font-weight: 50;
+/* padding-left: 80px; */
+padding-top: 2%;
+justify-content: space-evenly;
+}
+  
+
+.column {
+  float: left;
+  width: 400px;
+  margin: 10px;
+  font-size: 20px;
+}
+
+
+.aboutp1 {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 20px;
+  font-weight: 50;
+}
+.aboutp2 {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 20px;
+  font-weight: 50;
+}
+.aboutp3 {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 20px;
+  font-weight: 50;
+}
+.aboutp4 {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 20px;
+  font-weight: 50;
+}
